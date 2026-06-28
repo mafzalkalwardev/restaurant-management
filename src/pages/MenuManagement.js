@@ -13,7 +13,11 @@ export default function MenuManagement() {
 
   return (
     <div className="page-container">
-      <h2>Menu Management</h2>
+      <div className="section-heading">
+        <span className="eyebrow">Admin</span>
+        <h2>Menu Management</h2>
+        <p>Keep the short list current during service.</p>
+      </div>
 
       <table>
         <thead>

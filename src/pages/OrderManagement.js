@@ -17,7 +17,11 @@ export default function OrderManagement() {
 
   return (
     <div className="page-container">
-      <h2>Order Management</h2>
+      <div className="section-heading">
+        <span className="eyebrow">Admin</span>
+        <h2>Order Management</h2>
+        <p>Toggle ticket status as dishes leave the kitchen.</p>
+      </div>
 
       <table>
         <thead>

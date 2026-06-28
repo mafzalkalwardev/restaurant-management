@@ -26,17 +26,21 @@ function App() {
 
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu addToCart={addToCart} />} />
-        <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
-        <Route path="/admin" element={<AdminDashboard />} />
-        <Route path="/admin/menu" element={<MenuManagement />} />
-        <Route path="/admin/orders" element={<OrderManagement />} />
-        <Route path="/admin/audit" element={<AuditLog />} />
-      </Routes>
-      <Footer />
+      <div className="app-shell">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/menu" element={<Menu addToCart={addToCart} />} />
+            <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
+            <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/admin/menu" element={<MenuManagement />} />
+            <Route path="/admin/orders" element={<OrderManagement />} />
+            <Route path="/admin/audit" element={<AuditLog />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }

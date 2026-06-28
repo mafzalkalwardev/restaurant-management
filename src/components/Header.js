@@ -5,7 +5,13 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-left">
-        <h1> Fast Ease</h1>
+        <Link className="brand" to="/">
+          <span className="brand-mark">FE</span>
+          <span>
+            <strong>Fast Ease</strong>
+            <small>Restaurant Ops</small>
+          </span>
+        </Link>
       </div>
       <nav className="header-right">
         <Link to="/">Home</Link>

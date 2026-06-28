@@ -4,5 +4,5 @@ import App from './App';
 test('renders the Fast Ease landing route', () => {
   render(<App />);
   expect(screen.getByRole('heading', { name: /welcome to fast ease restaurant/i })).toBeInTheDocument();
-  expect(screen.getByRole('link', { name: /menu/i })).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: /explore menu/i })).toBeInTheDocument();
 });

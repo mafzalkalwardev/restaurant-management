@@ -7,10 +7,17 @@ export default function Cart({ cart, removeFromCart }) {
 
   return (
     <div className="page-container">
-      <h2>Your Cart</h2>
+      <div className="section-heading">
+        <span className="eyebrow">Guest checkout</span>
+        <h2>Your Cart</h2>
+        <p>Review selected dishes before sending the order to the kitchen.</p>
+      </div>
 
       {cart.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <div className="empty-state">
+          <strong>Your cart is empty.</strong>
+          <p>Add a few menu items and they will appear here with your total.</p>
+        </div>
       ) : (
         <table>
           <thead>

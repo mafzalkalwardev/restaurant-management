@@ -9,7 +9,11 @@ export default function AuditLog() {
 
   return (
     <div className="page-container">
-      <h2>Audit Log</h2>
+      <div className="section-heading">
+        <span className="eyebrow">Admin</span>
+        <h2>Audit Log</h2>
+        <p>Recent restaurant management activity at a glance.</p>
+      </div>
 
       <table>
         <thead>
